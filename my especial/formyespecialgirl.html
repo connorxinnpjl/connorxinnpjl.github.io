@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Você, Pessoa Especial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffccff; /* Fundo rosa claro */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff69b4; /* Título em rosa forte */
+            font-size: 36px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .poesia {
+            display: none; /* Inicialmente oculta */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            color: #333; /* Cor do texto da poesia */
+            margin-top: 30px;
+        }
+        .letra {
+            display: none;
+            margin-top: 20px;
+            background-color: rgba(255, 0, 0, 0.9); /* Letra em vermelho */
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            max-height: 400px; /* Limita a altura da letra */
+            overflow-y: auto; /* Adiciona rolagem se necessário */
+        }
+        button {
+            background-color: #ff69b4; /* Botão rosa */
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff1493; /* Efeito hover mais escuro */
+        }
+        .extra {
+            color: #ffd700; /* Amarelo bonito */
+            font-weight: bold;
+        }
+        .especial {
+            color: #ff0000; /* Vermelho para "Você é incrível!" */
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Para Você, Minha Pessoa Especial!</h1>
+    <p>Espero que você goste desses gatinhos fofos!</p>
+
+    <div>
+        <img src="https://cataas.com/cat?random=1" alt="Gato Fofo 1">
+        <img src="https://cataas.com/cat/heart" alt="Gato Fofo 2 segurando um coração">
+        <img src="https://cataas.com/cat?random=3" alt="Gato Fofo 3">
+    </div>
+
+    <button onclick="togglePoetry()">Mostrar/Ocultar Poesia</button>
+    <div id="poesia" class="poesia">
+        <p>Nos olhos do céu, um brilho sem par,<br>
+        Como estrelas dançando, vem me encantar.<br>
+        Teu sorriso é luz, meu abrigo, meu lar,<br>
+        Na melodia suave, começo a sonhar.</p>
+        
+        <p>Teus gestos delicados, uma dança sutil,<br>
+        O tempo se detém, é um momento infantil.<br>
+        Em cada palavra, a poesia a fluir,<br>
+        Tua presença, amor, é meu doce porvir.</p>
+        
+        <p>Nos abraços quentes, o mundo se vai,<br>
+        Somos dois corações, em um só compasso.<br>
+        A vida é mais bela quando estás ao meu lado,<br>
+        Em cada instante, me sinto apaixonado.</p>
+        
+        <p class="extra">Você é uma luz que ilumina meu caminho!</p>
+    </div>
+
+    <div>
+        <iframe src="https://www.boomplay.com/embed/138976926/MUSIC?colType=5&colID=76283264" width="100%" height="100" frameborder="0"></iframe>
+    </div>
+
+    <button onclick="toggleLyrics()">Mostrar Letra da Música</button>
+    
+    <div id="letra" class="letra">
+        <p>Desde o Começo<br>
+        Desde o começo, eu fico quieta,<br>
+        Não se atreva a me olhar assim.<br>
+        Ah, a dor ardente, ouvindo você<br>
+        Falar sobre um novo amor.<br>
+        <br>
+        Eu desejo que você acorde um dia,<br>
+        E atire uma flecha em meu coração.<br>
+        Mas você também não se sente assim?<br>
+        Confesso que eu te amei desde o início.<br>
+        <br>
+        O que uma garota pode fazer?<br>
+        Deitada na minha cama olhando<br>
+        Para o azul.<br>
+        Não correspondida, aterrorizada,<br>
+        O amor vem me deixando um pouco insana.<br>
+        Tenho que tirar isso do meu peito.<br>
+        <br>
+        Eu estou te dizendo hoje,<br>
+        Que quando falo com você,<br>
+        Oh, o cúpido passa direto,<br>
+        E atira uma flecha em meu coração.<br>
+        <br>
+        E eu pareço uma louca,<br>
+        Mas você também não se sente assim?<br>
+        Confesso que eu te amei desde o início.<br>
+        <br>
+        Confesso que eu te amei,<br>
+        Só de pensar em você,<br>
+        Eu sei que te amei desde o início.</p>
+    </div>
+
+    <p class="especial">Você é incrível!</p>
+
+    <script>
+        function togglePoetry() {
+            const poetryDiv = document.getElementById("poesia");
+            poetryDiv.style.display = poetryDiv.style.display === "none" || poetryDiv.style.display === "" ? "block" : "none";
+        }
+
+        function toggleLyrics() {
+            const letraDiv = document.getElementById("letra");
+            letraDiv.style.display = letraDiv.style.display === "none" || letraDiv.style.display === "" ? "block" : "none";
+        }
+    </script>
+
+</body>
+</html>
